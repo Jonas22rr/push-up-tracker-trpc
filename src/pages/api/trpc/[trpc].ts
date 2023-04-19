@@ -3,6 +3,13 @@ import { createNextApiHandler } from "@trpc/server/adapters/next";
 import { env } from "~/env.mjs";
 import { createTRPCContext } from "~/server/api/trpc";
 import { appRouter } from "~/server/api/root";
+import {
+  getSession,
+  signIn,
+  SessionContext,
+  SessionProvider,
+} from "next-auth/react";
+import { useRouter } from "next/router";
 
 // export API handler
 export default createNextApiHandler({
@@ -12,7 +19,7 @@ export default createNextApiHandler({
     env.NODE_ENV === "development"
       ? ({ path, error }) => {
           console.error(
-            `❌ tRPC failed on ${path ?? "<no-path>"}: ${error.message}`,
+            `❌ tRPC failed on ${path ?? "<no-path>"}: ${error.message}`
           );
         }
       : undefined,

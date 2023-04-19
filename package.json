@@ -10,18 +10,26 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdi/js": "^7.2.96",
+    "@mdi/react": "^1.6.1",
     "@next-auth/prisma-adapter": "^1.0.5",
-    "@prisma/client": "^4.11.0",
+    "@prisma/client": "^4.12.0",
+    "@tailwindcss/typography": "^0.5.9",
     "@tanstack/react-query": "^4.28.0",
     "@trpc/client": "^10.18.0",
     "@trpc/next": "^10.18.0",
     "@trpc/react-query": "^10.18.0",
     "@trpc/server": "^10.18.0",
+    "daisyui": "^2.51.5",
     "next": "^13.2.4",
     "next-auth": "^4.20.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-timer-hook": "^3.0.5",
+    "recoil": "^0.7.7",
     "superjson": "1.12.2",
+    "tailwindest": "^1.0.5",
+    "uuidv4": "^6.2.13",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -38,7 +46,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.5",
-    "prisma": "^4.11.0",
+    "prisma": "^4.12.0",
     "tailwindcss": "^3.2.7",
     "typescript": "^5.0.2"
   },
