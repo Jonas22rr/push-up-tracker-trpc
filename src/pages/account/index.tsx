@@ -25,7 +25,7 @@ export default function Account() {
 
     return (
         <Page isSecurePage isLoading={false}>
-            <div className="container mx-auto h-screen bg-[#262626] px-4 pt-20 pb-20 ">
+            <div className="container mx-auto h-screen bg-[#262626] px-4 pt-20 pb-52 ">
                 <div className="mx-3 flex flex-col items-center">
                     <div className="pb-10 text-5xl">Account</div>
                     {user?.image ? (
